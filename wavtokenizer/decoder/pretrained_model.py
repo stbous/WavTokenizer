@@ -4,10 +4,10 @@ import torch
 import yaml
 from huggingface_hub import hf_hub_download
 from torch import nn
-from decoder.feature_extractors import FeatureExtractor, EncodecFeatures
-from decoder.heads import FourierHead
-from decoder.models import Backbone
-from decoder.discriminators import MultiPeriodDiscriminator, MultiResolutionDiscriminator
+from wavtokenizer.decoder.feature_extractors import FeatureExtractor, EncodecFeatures
+from wavtokenizer.decoder.heads import FourierHead
+from wavtokenizer.decoder.models import Backbone
+from wavtokenizer.decoder.discriminators import MultiPeriodDiscriminator, MultiResolutionDiscriminator
 
 
 def instantiate_class(args: Union[Any, Tuple[Any, ...]], init: Dict[str, Any]) -> Any:

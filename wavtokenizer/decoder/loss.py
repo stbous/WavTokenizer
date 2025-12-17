@@ -4,7 +4,7 @@ import torch
 import torchaudio
 from torch import nn
 
-from decoder.modules import safe_log
+from wavtokenizer.decoder.modules import safe_log
 
 import torch.nn.functional as F
 

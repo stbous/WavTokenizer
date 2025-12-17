@@ -1,10 +1,10 @@
 # --coding:utf-8--
 import os
 
-from encoder.utils import convert_audio
+from wavtokenizer.encoder.utils import convert_audio
 import torchaudio
 import torch
-from decoder.pretrained import WavTokenizer
+from wavtokenizer import WavTokenizer
 
 import time
 
